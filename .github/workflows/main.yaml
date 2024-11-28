@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: supabase/setup-cli@v1
         with:
-          version: 1.0.0
+          version: latest
 
       - run: supabase link --project-ref $SUPABASE_PROJECT_ID
       - run: supabase db push
