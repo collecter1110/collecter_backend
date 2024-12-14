@@ -5,8 +5,7 @@ on:
     branches:
       - dev  
   workflow_dispatch:
-  schedule:
-    - cron: '5 8 14 12 *'
+
 jobs:
   merge-and-release:
     runs-on: ubuntu-latest
