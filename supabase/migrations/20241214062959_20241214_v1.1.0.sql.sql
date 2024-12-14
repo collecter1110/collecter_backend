@@ -68,6 +68,17 @@ create table "public"."categoryinfo" (
     "category_description" text
 );
 
+insert into "public"."categoryinfo" ("category_name", "category_description")
+values 
+('😎 기타', 'etc.'),
+('🎸 음악', '오아시스 내한 기념 플레이리스트'),
+('🛫 여행', '여행 추천'),
+('📚 책', '콜렉터들의 책장'),
+('🎬 영화', '에디터s pick'),
+('🥘 요리', '나만의 요리 레시피'),
+('🚩 장소', '데이트 장소 추천'),
+('🥃 테이스팅 노트', '음주가무'),
+('🧶 뜨개', '폭닥폭닥 뜨개 모음집');
 
 alter table "public"."categoryinfo" enable row level security;
 
