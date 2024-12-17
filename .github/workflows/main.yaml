@@ -1,8 +1,9 @@
 name: Release (Production)
 
 on:
-  schedule:
-    - cron: '30 0 * * *'  # UTC 기준 0시 30분 (한국 시간 09:30)
+  push:
+    branches:
+      - dev
   workflow_dispatch:
 
 jobs:
@@ -15,27 +16,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # 모든 브랜치 히스토리를 체크아웃
-
-      - name: Merge to dev and main branches
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          
-          # 현재 작업 중인 브랜치의 이름을 동적으로 가져옴
-          CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-          
-          # dev 브랜치로 체크아웃 및 머지
-          git checkout dev
-          git merge $CURRENT_BRANCH
-          git push origin dev
-          
-          # main 브랜치로 체크아웃 및 머지
-          git checkout main
-          git merge $CURRENT_BRANCH
-          git push origin main
-
       - uses: supabase/setup-cli@v1
         with:
           version: latest
