@@ -1,6 +1,6 @@
- # **Collecter**
+ # **Collecter_backend**
 
-This repository contains a Flutter-based application and its related backend services, designed as a cross-platform solution. It leverages Flutter, Supabase, AWS services, and other key technologies to deliver a scalable and robust application.
+This repository contains a backend solution built with Supabase, designed to provide real-time database capabilities, authentication, and storage services. It leverages Supabase’s powerful features to deliver a scalable and efficient backend for cross-platform applications.
 
 <br>
 
@@ -8,7 +8,7 @@ This repository contains a Flutter-based application and its related backend ser
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/collecter1110/collecter.git
+git clone https://github.com/collecter1110/collecter_backend.git
 cd supabase
 ```
 <br>
@@ -16,7 +16,7 @@ cd supabase
 ## **File Structure**
 ```
 .
-├── lib
+├── .github
 │   ├── components          # Reusable UI components
 │   ├── data                # Data processing
 │   │   ├── model           # Classify imported data
@@ -25,11 +25,11 @@ cd supabase
 │   ├── page                # Page
 │   ├── main                # main.dart
 │   └── page_navigator      # Page movement and rendering
-├── assets                  # Static assets (images, fonts, etc.)
-│   ├── icons               # icon with function
-│   └── images              # Image without features
-├── pubspec.yaml            # Dependency configurations
-└── README.md               # Project documentation
+└── supabase                  # Static assets (images, fonts, etc.)
+    ├── icons               # icon with function
+    └── images              # Image without features
+
+
 
 ```
 
