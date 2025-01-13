@@ -17,19 +17,11 @@ cd supabase
 ```
 .
 ├── .github
-│   ├── components          # Reusable UI components
-│   ├── data                # Data processing
-│   │   ├── model           # Classify imported data
-│   │   ├── provider        # Provider management
-│   │   └── services        # Data-related modular logic management
-│   ├── page                # Page
-│   ├── main                # main.dart
-│   └── page_navigator      # Page movement and rendering
-└── supabase                  # Static assets (images, fonts, etc.)
-    ├── icons               # icon with function
-    └── images              # Image without features
-
-
+│   └── workflows           
+│       └── main.yalm       # Define CI/CD pipeline
+└── supabase                # Static assets (images, fonts, etc.)
+    ├── migrations          # Migrations SQL files
+    └── config.toml         # Define settings for components in the backend
 
 ```
 
@@ -65,4 +57,12 @@ We use the **Git Flow** branching model:
 - `test`: Adding or updating tests
 - `chore`: Maintenance tasks
 
+
+<br>
+  
+## **Migration Guidelines**
+
+### **File name:**
+
+`[migration_date]_[deploy_version].sql`
 
