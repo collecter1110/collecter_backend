@@ -13,9 +13,6 @@ cd supabase
 ```
 <br>
 
-
-<br>
-
 ## **Migration**
 
 ### **Migrate changes to test environment**
