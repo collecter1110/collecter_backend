@@ -13,6 +13,18 @@ cd supabase
 ```
 <br>
 
+
+<br>
+
+## **Migration**
+
+### **Migrate changes to test environment**
+```
+supabase db diff --db-url <test-db-url> --file <migration-name>.sql
+```
+
+<br>
+
 ## **File Structure**
 ```
 .
