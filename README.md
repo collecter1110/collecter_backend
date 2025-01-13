@@ -9,7 +9,7 @@ This repository contains a Flutter-based application and its related backend ser
 ### **Clone the Repository**
 ```bash
 git clone https://github.com/collecter1110/collecter.git
-cd collecter
+cd supabase
 ```
 <br>
 
